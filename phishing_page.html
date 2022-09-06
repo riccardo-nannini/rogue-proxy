@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        .container{
+            margin: auto;
+            width: 60%;
+            padding-top: 50px;
+        }
+        body{
+            background-color: aliceblue;
+        }
+        .title{
+            text-align: center;
+            font-family: Helvetica,sans-serif;
+        }
+        input[type=text], input[type=password] {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+        }
+        button {
+          background-color: #1268b3;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          font-size: 18px;
+        }
+        button:hover {
+          opacity: 0.8;
+        }
+        button:active {
+            background-color: #1268b3;
+        }
+        .form_container {
+          padding: 16px;
+            width: 80%;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">
+            Login
+        </h1>
+        <form action="" method="post">
+          <div class="form_container">
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter a username" name="username" required>
+
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter a password" name="password" required>
+
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+        </form>
+    </div>
+
+</body>
+</html>
